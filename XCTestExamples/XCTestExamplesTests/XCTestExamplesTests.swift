@@ -26,7 +26,7 @@ final class XCTestExamplesTests: XCTestCase {
     }
     
     func testExampleSkipped() throws {
-        XCTSkip("This test is skipped on purpose so we can capture at least one skipped test")
+        throw XCTSkip("This test is skipped on purpose so we can capture at least one skipped test")
     }
     
     func testExpectedFailure() throws {
